@@ -2,7 +2,8 @@ import pandas as pd
 import cv2
 import smtplib
 email=[]
-for i in range(1805035,1805045):
+#you can also import file containing  mail ids.
+for i in range(1805000,1806000):#i want to send mails to mail id 1805092@kiit.ac.in to 1805999@kiit.ac.in
     j=str(i)
     email.append(j+"@kiit.ac.in")
 server = smtplib.SMTP("smtp.gmail.com", 587)
